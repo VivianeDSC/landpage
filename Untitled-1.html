@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil da Corretora de Imóveis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .about, .properties, .contact {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .property img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .btn-submit {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Viviane Ciodaro</h1>
+    <h2>Corretora de Imóveis</h2>
+    <p>Sua especialista em imóveis no Rio de Janeiro</p>
+    <p>Telefone: <a href="https://wa.me/5521980304453?text=Olá,%20gostaria%20de%20mais%20informações!" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #25D366; color: white; text-decoration: none; border-radius: 5px;">+55 21 98030-4453</a>
+        | E-mail: <a href="mailto:ciodaro.viviane@creci.org.br" style="display: inline-block; padding: 10px 20px; background-color: #25D366; color: white; text-decoration: none; border-radius: 5px;">ciodaro.viviane@creci.org.br</a></p>
+</header>
+
+<div class="container">
+
+    <div class="about">
+        <img src="Images\foto da corretora.png" alt="Foto do Corretor" style="width:100px;height:100px;border-radius:50%;">
+        <h2>Sobre Mim</h2>
+        <p>Olá, meu nome é Viviane Ciodaro. Sou corretora de imóveis especialista em direito imobiliário, apaixonada por ajudar meus clientes a encontrar o ímóvel dos seus sonhos ou o investimento perfeito!</p>
+    </div>
+
+<title>Filtro por Bairro</title>
+    <style>
+        
+        .filter-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: hsl(210, 100%, 98%);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        button img {
+            width: 25px;
+            height: 25px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="filter-container">
+        <h2>Encontre seu imóvel</h2>
+        <select id="bairro">
+            <option value="" disabled selected>Selecione um bairro</option>
+            <option value="bairro1">Porto Maravilha</option>
+            <option value="bairro2">Zona Norte</option>
+            <option value="bairro3">Zona Sul</option>
+            <option value="bairro4">Centro</option>
+            <option value="bairro5">Niterói</option>
+            <option value="bairro6">Zona Oeste</option>
+
+        </select>
+        <button onclick="filtrarBairro()">
+            <img src="images/lupa.png" alt="Buscar">
+        </button>
+    </div>
+
+    <script>
+        function filtrarBairro() {
+            const bairroSelecionado = document.getElementById("bairro").value;
+            if (bairroSelecionado) {
+                // Aqui você pode redirecionar o usuário para uma página específica com base no bairro selecionado.
+                alert(`Você selecionou o bairro: ${bairroSelecionado}`);
+                // window.location.href = `/imoveis?bairro=${bairroSelecionado}`;
+            } else {
+                alert("Por favor, selecione um bairro.");
+            }
+        }
+    </script>
+
+
+
+
+    <div class="properties">
+        <h2>Últimos lançamentos</h2>
+        
+        <div class="property">
+            <img src="link_para_imagem1.jpg" alt="The Pier">
+            <h3>The Pier Residencial</h3>
+            <p>Apartamentos à venda com 1, 2 e 3 quartos com suíte e lazer diferenciado. 
+                Conheça o The Pier Residencial!
+
+                Próximo ao Shopping Plaza Niterói e a CCR Barcas;
+                Em frente ao Caminho Niemeyer;
+                Fácil acesso a Av. Visconde do Rio Branco.
+                Compre na planta com preços imperdíveis.</p>
+        </div>
+        
+        <div class="property">
+            <img src="link_para_imagem2.jpg" alt="Nova Norte Ginga">
+            <h3>Imóvel 2</h3>
+            <p>Este [tipo de imóvel] em [Localização] oferece [características principais]...</p>
+        </div>
+        
+        <div class="property">
+            <img src="link_para_imagem3.jpg" alt="Parque Britto III">
+            <h3>Imóvel 3</h3>
+            <p>Se você procura [tipo de imóvel], este [localização] é uma excelente opção...</p>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h2>Entre em Contato</h2>
+        <form action="https://api.whatsapp.com/send?phone=5521980304453" method="get" target="_blank">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefone:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit" class="btn-submit">Enviar</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Coleta os valores dos campos do formulário
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            
+             // Cria a mensagem para o WhatsApp
+             const message = `Olá! Meu nome é ${name}. Gostaria de mais informações. Telefone: ${phone}, E-mail: ${email}`;
+            
+            // Codifica a mensagem para o URL
+            const encodedMessage = encodeURIComponent(message);
+            
+            // Cria o link do WhatsApp com a mensagem
+            const whatsappLink = `https://wa.me/5521980304453?text=${encodedMessage}`;
+            
+            // Abre o link no WhatsApp
+            window.open(whatsappLink, '_blank');
+        });
+    </script>
+</div>
+
+<footer class="footer">
+    <p>Redes Sociais: https://www.instagram.com/ciodaro.v/</p>
+    <p><a href="[Link para a política de privacidade]" style="color:#fff;">Política de Privacidade</a></p>
+</footer>
+
+</body>
+</html>
